@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap');
+
+:root {
+  --bg: #F8F7F4;
+  --text: #1C1B2E;
+  --text-muted: rgba(28, 27, 46, 0.5);
+  --text-secondary: rgba(28, 27, 46, 0.7);
+  --accent: #C8005E;
+  --accent-hover: #A8004E;
+  --accent-light: rgba(200, 0, 94, 0.08);
+  --border: rgba(28, 27, 46, 0.12);
+  --card-bg: #FFFFFF;
+  --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --pass: #1B8C5A;
+  --borderline: #C47F17;
+  --fail: #C0392B;
+  --font: 'DM Sans', sans-serif;
+  --radius: 6px;
+  --radius-lg: 10px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 14px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+button { font-family: var(--font); cursor: pointer; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+input, textarea, select {
+  font-family: var(--font);
+  font-size: 14px;
+  color: var(--text);
+}
