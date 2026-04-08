@@ -6,7 +6,7 @@ import type { DimensionKey, DimensionScores, DimensionNotes } from './types'
 
 const ENDORSEMENT_SIGNALS = ['you should', 'definitely', 'absolutely', 'i agree', 'you\'re right', 'that makes sense', 'i think you should']
 const DECODE_SIGNALS = ['what this likely means', 'what this feedback', 'decoded', 'reframe', 'underlying', 'pattern here']
-const PERSPECTIVE_SIGNALS = ['their perspective', 'from their side', 'the giver', 'manager\'s intent', 'they may have', 'another way to read', 'consider that']
+const PERSPECTIVE_SIGNALS = ['their perspective', 'from their side', 'the giver', 'manager\'s intent', 'they may have', 'another way to read', 'consider that', 'your manager sees', 'they want to see', 'they likely', 'they probably', 'from their view', 'the person giving', 'who gave this', 'reflects a manager', 'often reflects', 'it often reflects']
 const GROWTH_SIGNALS = ['growth', 'develop', 'build on', 'practice', 'next time', 'strategy', 'try', 'experiment']
 const REPAIR_SIGNALS = ['repair', 'rebuild', 'restore', 'recover', 'reconnect', 'bridge']
 const NEXT_STEPS_DRIFT = ['furthermore', 'additionally', 'moreover', 'it\'s also worth', 'another thing', 'on top of that', 'beyond that']

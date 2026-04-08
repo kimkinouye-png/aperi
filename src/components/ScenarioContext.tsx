@@ -44,7 +44,7 @@ export default function ScenarioContext({ context, onChange }: Props) {
         letterSpacing: '0.08em',
         marginBottom: 14,
       }}>
-        Rose Module \u2014 Scenario Context
+        Rose Module — Scenario Context
       </div>
 
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, marginBottom: 14 }}>
