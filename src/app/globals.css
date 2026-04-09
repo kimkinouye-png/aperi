@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap');
 
 :root {
-  --bg: #F8F7F4;
-  --text: #1C1B2E;
-  --text-muted: rgba(28, 27, 46, 0.5);
-  --text-secondary: rgba(28, 27, 46, 0.7);
+  --bg: #0F0F0F;
+  --text: #F0EDE6;
+  --text-muted: rgba(240, 237, 230, 0.45);
+  --text-secondary: rgba(240, 237, 230, 0.65);
   --accent: #C8005E;
-  --accent-hover: #A8004E;
-  --accent-light: rgba(200, 0, 94, 0.08);
-  --border: rgba(28, 27, 46, 0.12);
-  --card-bg: #FFFFFF;
-  --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-  --pass: #1B8C5A;
-  --borderline: #C47F17;
-  --fail: #C0392B;
+  --accent-hover: #E0006A;
+  --accent-light: rgba(200, 0, 94, 0.15);
+  --border: rgba(240, 237, 230, 0.1);
+  --card-bg: #1A1A1A;
+  --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --pass: #2ECC71;
+  --borderline: #E5A825;
+  --fail: #E74C3C;
   --font: 'DM Sans', sans-serif;
   --radius: 6px;
   --radius-lg: 10px;
@@ -25,8 +25,8 @@ html, body {
   background: var(--bg);
   color: var(--text);
   font-family: var(--font);
-  font-size: 14px;
-  line-height: 1.55;
+  font-size: 16px;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -36,6 +36,6 @@ a:hover { text-decoration: underline; }
 
 input, textarea, select {
   font-family: var(--font);
-  font-size: 14px;
+  font-size: 16px;
   color: var(--text);
 }

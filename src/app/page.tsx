@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div style={{ minHeight: '100vh' }}>
       <Header view={view} onViewChange={setView} />
-      <main style={{ maxWidth: 780, margin: '0 auto', padding: '24px 20px 80px' }}>
+      <main style={{ maxWidth: 780, margin: '0 auto', padding: '32px 24px 100px' }}>
         {view === 'score' ? <ScoreView /> : <HistoryView />}
       </main>
     </div>

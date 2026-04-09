@@ -54,7 +54,7 @@ export const DIMENSIONS: DimensionDef[] = [
   },
   {
     key: 'sc',
-    label: 'Severity calibration',
+    label: 'Tone calibration',
     levels: ['Wrong tier', 'Off', 'Close', 'Matched'],
   },
 ]
