@@ -2,8 +2,6 @@
 
 import { useEffect, useState } from 'react'
 import type { ScoringRun } from '@/lib/types'
-import { SEVERITY_LABELS } from '@/lib/types'
-import type { SeverityTier } from '@/lib/types'
 import { supabase } from '@/lib/supabase'
 
 function resultFor(score: number): { label: string; color: string } {
@@ -72,7 +70,6 @@ export default function HistoryView() {
       <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
         {runs.map(run => {
           const { label, color } = resultFor(run.overall_score)
-          const tierLabel = SEVERITY_LABELS[run.severity_tier as SeverityTier] || `Tier ${run.severity_tier}`
           const date = new Date(run.created_at).toLocaleDateString('en-US', {
             month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit',
           })
@@ -112,26 +109,10 @@ export default function HistoryView() {
 
                 <div style={{ minWidth: 0 }}>
                   <div style={{ display: 'flex', gap: 6, alignItems: 'center', flexWrap: 'wrap' }}>
-                    <span style={{ fontSize: 13, fontWeight: 600 }}>{run.persona}</span>
-                    <span style={{
-                      fontSize: 10,
-                      padding: '2px 8px',
-                      borderRadius: 20,
-                      background: 'var(--accent-light)',
-                      color: 'var(--accent)',
-                      fontWeight: 500,
-                    }}>
-                      {tierLabel}
-                    </span>
-                    <span style={{
-                      fontSize: 10,
-                      padding: '2px 8px',
-                      borderRadius: 20,
-                      background: 'rgba(28,27,46,0.05)',
-                      color: 'var(--text-secondary)',
-                      fontWeight: 500,
-                    }}>
-                      {run.emotional_framing}
+                    <span style={{ fontSize: 13, fontWeight: 600 }}>
+                      {run.response_text
+                        ? run.response_text.slice(0, 60) + (run.response_text.length > 60 ? '...' : '')
+                        : 'Untitled run'}
                     </span>
                   </div>
                   {run.overall_notes && (
